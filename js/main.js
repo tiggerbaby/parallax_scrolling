@@ -10,4 +10,13 @@ $(window).scroll(function(){
    $('.fore-bird').css({
    	'transform' : 'translate(0px, -'+ scroll/50 +'%)'
    });
+
+// When the clothes-pics get to the top of the window
+   if(scroll > $('.clothes-pics').offset().top){
+   	 $('.clothes-pics figure').each(function(i){
+   	  setTimeout(function(){
+   	 	$('.clothes-pics figure').eq(i).addClass('is-showing');
+   	 },150*(i+1));
+   	 });
+   }
 });
