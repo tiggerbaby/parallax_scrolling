@@ -12,11 +12,11 @@ $(window).scroll(function(){
    });
 
 // When the clothes-pics get to the top of the window
-   if(scroll > $('.clothes-pics').offset().top){
+   if(scroll > $('.clothes-pics').offset().top - ($(window).height()/1.2)){
    	 $('.clothes-pics figure').each(function(i){
    	  setTimeout(function(){
    	 	$('.clothes-pics figure').eq(i).addClass('is-showing');
-   	 },150*(i+1));
+   	 },200*(i+1));
    	 });
    }
 });
