@@ -68,4 +68,15 @@ img {
   opacity: 1;
   transform: translateX(0px); }
 
+.large-window {
+  height: 640px;
+  background-image: url(../images/model2.jpg);
+  background-position: center 0px;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 50%;
+  position: relative; }
+
 /*# sourceMappingURL=style.css.map */
