@@ -21,7 +21,7 @@ $(window).scroll(function(){
    }
 
    if(scroll > $('.large-window').offset().top - $(window).height()){
-   	$('.large-window').css({'background-position':'center 0px'+ (scroll + $('.large-window').offset().top) + 'px'});
+   	$('.large-window').css({'background-position':'center '+ (scroll + $('.large-window').offset().top) + 'px'});
    }
 
 
