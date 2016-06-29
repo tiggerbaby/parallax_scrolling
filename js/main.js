@@ -19,4 +19,11 @@ $(window).scroll(function(){
    	 },200*(i+1));
    	 });
    }
+
+   if(scroll > $('.large-window').offset().top - $(window).height()){
+   	$('.large-window').css({'background-position':'center 0px'+ (scroll + $('.large-window').offset().top) + 'px'});
+   }
+
+
 });
+
