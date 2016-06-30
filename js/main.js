@@ -22,8 +22,10 @@ $(window).scroll(function(){
 
    if(scroll > $('.large-window').offset().top - $(window).height()){
    	$('.large-window').css({'background-position':'center '+ (scroll + $('.large-window').offset().top) + 'px'});
-   }
-
+   } 
+   // Apply the opacity form 0 to 1 when scrolling
+   	var opacity = (scroll - $('.large-window').offset().top + 400) / (scroll/5);
+    $('.window-tint').css({'opacity': opacity})
 
 });
 
